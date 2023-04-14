@@ -1,0 +1,53 @@
+import art
+
+print(art.knight)
+
+print("Welcome to The Island.")
+
+print("Your mission adventurer is to find and resue the princess.")
+
+# the first choice for thr plyer, what is the first choice you want to make?
+
+choice1 = input('which way do you begin you search? "left" or "right"').lower()
+
+if choice1 == "left":
+  print("you walk for hours seeing nothing but dence brush")
+  
+  # if the right choice is made procead here
+  
+  choice2 = input('''"stumple and fall, rolling into an omanisly glowing cave. what do you do? do you forge ahead or try to climb out. 'forge ahead'or 'climb out'"\n''').lower()
+  
+  if choice2 == 'forge ahead':
+    
+    print("After what feels like days walking though the cave lit with glowing algy you see the warm red glow of the sun rise you sprint out of the cave")
+    
+    # save the princess? 
+    
+    choice3 = input("there is a fork in the road,do you take the high road or the low road? 'high' or 'low'\n").lower()
+    
+    if choice3 == 'high':
+      print("you discover the bandits hidout, you here a feminine scream")
+      choice4 = input("what do you do? run in like an idiot or stealth? 'run-in'or 'stealth'").lower()
+      
+      if choice4 == 'stealth':
+        
+        print("you successfully extermanate all the bandits and save the princess you return and get married.\n you become arch-duke of the kingdom.")
+
+        print(art.princess)        
+        
+        print("YOU WIN")
+      else:
+        print("Your captured. the bandits make you watch as they defile the princeess and realish in you shared despair before feeding you to the sirens")
+      
+    else:
+      print("you run into a hoard of zombies and goblins Game Over")
+      
+      print(art.goblin)
+
+      print(art.zombie)
+  else:
+    print('''"you struggle and struggle for what feels like hours but is actully years eventully you die from old age due to your 
+indomitable adventures spirit"''')
+else:
+    print("Game over")
+
